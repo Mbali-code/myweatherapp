@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather App</title>
+    <link href="index.css" rel="stylesheet" type="text/css"
+<body>
+</head>
+<form>
+        <h1> Welcome to my Weather App </h1>
+    <div>
+        <h2>
+            <input type=id="city" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+            <div id="Weather-data"></div>
+        </h2>
+    </div>
+<form>
+<head/>
+ <footer
+ This is project was coded by
+ <a href="" target="_blank">
+        <a href="" target="_blank" 
+     </footer>
+    </body>
+    <srcipt>
+        const apiKey='6cc4c9b50b7f1actao20f6ba0f43b3b6'
+        const cityInput = document.getElementId('city');
+        const search-btn = document.getElementId('search-btn');
+        const weatherDataDiv = document.getElementById('Weather-data');
+
+        searchBtn.addEventListener('click ,FetchhWeather');
+
+        function FetchhWeather(){
+            const city = cityInput.value.trim();
+            if(city){
+                const url = '(link unavailable);
+                fetch(url)
+                then(response => response.json())
+                then(data =>displayWeather(data))
+                catch(error => console.error(error));
+            }
+        }
+        function displayWeather(data){
+            const weatherHTML = '
+            <h2>${data.name},${data.sys.country}</h2>
+            <p>Temperature: ${data.main,temp}°C</p>
+            <p>Feels like:${data.main.humidity}%</p>
+            <p>Weather:${data.weather[0].description</p>
+                ';
+            weatherDataDiv.innerHTML = weatherHTML
+        }
+    </srcipt>
+</a>
+</html>

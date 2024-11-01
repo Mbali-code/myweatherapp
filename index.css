@@ -1,0 +1,27 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blueviolet;
+}
+.weather-container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+#city {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#search-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#weather-data {
+    margin-top: 20px;
+    font-size: 24px;
+}
